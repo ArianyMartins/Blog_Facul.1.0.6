@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Blog da Faculdade</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Blog da Faculdade</h1>
+        <nav>
+            <ul>
+                <li><a href="#report1" class="open-modal" data-modal="modal1">Relatório 1</a></li>
+                <li><a href="#report2" class="open-modal" data-modal="modal2">Relatório 2</a></li>
+                <li><a href="#report3" class="open-modal" data-modal="modal3">Relatório 3</a></li>
+                <li><a href="#report4" class="open-modal" data-modal="modal4">Relatório 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <center></center>
+        <section id="report1" class="report-section">
+            <h2>Ariany Martins da Silva</h2>
+         <b><p>Detalhes do(a) aluno(a):</b><br>
+               Cursando: Sistemas da Informação.<br>
+               E-mail: arianymartinsdasilva@gmail.com
+            </p>
+        </section>
+        <section id="report2" class="report-section">
+            <h2>Filipe Dantas de Morais</h2>
+         <b><p>Detalhes do(a) aluno(a):</b><br>
+               Cursando: Sistemas da Informação.<br>
+               E-mail: dantasfilipe145@gmail.com
+            </p>
+        </section>
+        <section id="report3" class="report-section">
+            <h2>Guilherme Antônio Bernardes Borges</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: guilhermebernardessz10@gmail.com
+                </p>
+        </section>
+        <section id="report4" class="report-section">
+            <h2>Isabella Fonseca Ribeiro</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: isarib1998@gmail.com
+                </p>
+        </section>
+    </main>
+
+    <!-- Modals -->
+        <div id="modal1" class="modal">
+        
+        <div class="modal-content">
+            <span class="close" data-modal="modal1">&times;</span>
+            <center>
+
+            <h2>Relatório 1</h2>
+            <!-- Abas para navegação interna -->
+           <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Page1-1', 'modal1')"><</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-2', 'modal1')">2</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-3', 'modal1')">></button>
+           </div>
+            <!-- Conteúdo das Páginas Internas -->
+            <div id="Page1-1" class="tabcontent">
+                <h3>Página 1</h3>
+                <p>Conteúdo da Página 1.</p>
+            </div>
+
+            <div id="Page1-2" class="tabcontent" style="display:none">
+                <h3>Página 2</h3>
+                <p>Conteúdo da Página 2.</p>
+            </div>
+
+            <div id="Page1-3" class="tabcontent" style="display:none">
+                <h3>Página 3</h3>
+                <p>Conteúdo da Página 3.</p>
+
+                <video width="640" height="360" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        <source src="video1.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+            </div>
+        </center>
+
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <center>
+
+            <h2>Relatório 2</h2>
+                <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Page1-1', 'modal1')"><</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-2', 'modal1')">2</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-3', 'modal1')">></button>
+            </div>
+            <div id="Page2-1" class="tabcontent">
+                <h3>Página 1</h3>
+                <p>Conteúdo da Página 1.</p>
+            </div>
+
+            <div id="Page2-2" class="tabcontent" style="display:none">
+                <h3>Página 2</h3>
+                <p>Conteúdo da Página 2.</p>
+            </div>
+
+            <div id="Page2-3" class="tabcontent" style="display:none">
+                <h3>Página 3</h3>
+                <p>Conteúdo da Página 3.</p>
+            </div>
+        </center>
+
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal3">&times;</span>
+            <center>
+
+            <h2>Relatório 3</h2>
+                <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Page1-1', 'modal1')"><</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-2', 'modal1')">2</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-3', 'modal1')">></button>
+            </div>
+            
+            <div id="Page3-1" class="tabcontent">
+                <h3>Página 1</h3>
+                <p>Conteúdo da Página 1.</p>
+            </div>
+
+            <div id="Page3-2" class="tabcontent" style="display:none">
+                <h3>Página 2</h3>
+                <p>Conteúdo da Página 2.</p>
+            </div>
+
+            <div id="Page3-3" class="tabcontent" style="display:none">
+                <h3>Página 3</h3>
+                <p>Conteúdo da Página 3.</p>
+            </div>
+        </center> 
+
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal4">&times;</span>
+            <center>
+
+            <h2>Relatório 4</h2>
+                <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Page1-1', 'modal1')"><</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-2', 'modal1')">2</button>
+                <button class="tablinks" onclick="openTab(event, 'Page1-3', 'modal1')">></button>
+            </div>
+            <div id="Page4-1" class="tabcontent">
+                <h3>Página 1</h3>
+                <p>Conteúdo da Página 1.</p>
+            </div>
+
+            <div id="Page4-2" class="tabcontent" style="display:none">
+                <h3>Página 2</h3>
+            </div>
+
+            <div id="Page4-3" class="tabcontent" style="display:none">
+                <h3>Página 3</h3>
+            </div>
+        </center>
+        </div>
+    </div>
+</body>
+</html>
