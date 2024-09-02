@@ -81,8 +81,6 @@ section:hover {
 
 /* Report section */
 .report-section {
-    box-shadow: #474747;
-    border: #00f;
     margin-bottom: 2rem;
 }
 
@@ -206,7 +204,7 @@ button.icon-button i {
         font-size: 1.5rem;
     }
 
-    .modal-content {
+    .modal-content{
         width: 95%;
         max-width: 500px;
         padding: 1rem;
@@ -229,11 +227,38 @@ button.icon-button i {
     display: block; /* Remove espaços em branco ao redor das imagens */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
-    .modal-content video {
-    width: 100%; /* O vídeo ocupará 100% da largura disponível */
-    max-width: 100%; /* Impede que o vídeo ultrapasse a largura da caixa modal */
-    height: auto; /* Mantém a proporção do vídeo */
-    display: block; /* Remove o espaço abaixo do vídeo */
-    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    .modal-content video{
+    width: 100%; /* Imagem ocupa 100% da largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    display: block; /* Remove espaços em branco ao redor das imagens */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
+
+.reference {
+    font-family: Arial, sans-serif; /* Define uma fonte legível */
+    font-size: 14px; /* Tamanho de fonte responsivo */
+    line-height: 1.5; /* Melhora a legibilidade */
+    margin-top: 20px; /* Espaçamento acima da referência */
+}
+
+.reference h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reference h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.reference a {
+    color: #0066cc; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.reference a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
 }
