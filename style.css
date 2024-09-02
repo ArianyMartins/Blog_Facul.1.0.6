@@ -230,4 +230,11 @@ button.icon-button i {
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
     border-radius: 8px; /* Adiciona bordas arredondadas */
 }
+    .modal-content video {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Mantém a proporção do vídeo */
+    display: block; /* Remove o espaço abaixo do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+}
 }
