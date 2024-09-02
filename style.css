@@ -219,4 +219,9 @@ button.icon-button i {
     nav ul li {
         margin: 0.5rem 0;
     }
+    img source {
+        width: 95%;
+        max-width: 500px;
+        padding: 1rem;
+}
 }
