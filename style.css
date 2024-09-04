@@ -110,7 +110,7 @@ section:hover {
     overflow-y: auto; /* Permite rolagem vertical se o conteúdo for extenso */
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     margin: auto; /* Centraliza horizontalmente */
 }
 
