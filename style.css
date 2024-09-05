@@ -80,7 +80,7 @@ h2 {
 }
 
 section:hover {
-    background: linear-gradient(to right top, #00f, #0f0);
+    background: linear-gradient(to right top, rgba(0, 0, 255, 0.678), rgba(0, 255, 0, 0.685));
     color: #fafafa;
     padding: 1rem;
     transition: background-color 1ms;
@@ -101,7 +101,7 @@ section:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 10;
