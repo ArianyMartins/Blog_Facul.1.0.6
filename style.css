@@ -33,6 +33,14 @@ header h1 {
     margin-bottom: 1rem;
 }
 
+a:hover {
+    background: linear-gradient(to right top, #00f, #0f0);
+    color: #fafafa;
+    padding: 10px;
+    transition: background-color;
+    border-radius: 50px
+}
+
 nav ul {
     list-style: none;
     padding: 0;
