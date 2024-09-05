@@ -13,8 +13,8 @@
         <h1>Blog da Faculdade</h1>
         <nav>
             <ul>
-                <li><a href="#report1" class="open-modal" data-modal="modal1">Relatório Arduino</a></li>
-                <li><a href="#report2" class="open-modal" data-modal="modal2">Relatório 2</a></li>
+                <li><a href="#report1" class="open-modal" data-modal="modal1">Relatório Semafaro</a></li>
+                <li><a href="#report2" class="open-modal" data-modal="modal2">Relatório Potenciômetro</a></li>
                 <li><a href="#report3" class="open-modal" data-modal="modal3">Relatório 3</a></li>
                 <li><a href="#report4" class="open-modal" data-modal="modal4">Relatório 4</a></li>
             </ul>
@@ -25,16 +25,18 @@
     <main>
         
         <section id="report1" class="report-section">
-            <h2>Ariany Martins da Silva</h2>
+           <h2>Ariany Martins da Silva</h2>
          <b><p>Detalhes do(a) aluno(a):</b><br>
                Cursando: Sistemas da Informação.<br>
+               Período: 4° <br>
                E-mail: arianymartinsdasilva@gmail.com
             </p>
         </section>
         <section id="report2" class="report-section">
-            <h2>Filipe Dantas de Morais</h2>
+           <h2>Filipe Dantas de Morais</h2>
          <b><p>Detalhes do(a) aluno(a):</b><br>
                Cursando: Sistemas da Informação.<br>
+               Período: 4° <br>
                E-mail: dantasfilipe145@gmail.com
             </p>
         </section>
@@ -55,7 +57,7 @@
                 </p>
         </section>
         <section id="report5" class="report-section">
-            <h2>Lucas Barata Cabacho</h2>
+            <h2>Lucas Barata Camacho</h2>
           <b><p>Detalhes do(a) aluno(a):</b><br>
                 Cursando: Sistemas da Informação <br>
                 Período: 4° <br>
@@ -67,6 +69,7 @@
           <b><p>Detalhes do(a) aluno(a):</b><br>
                 Cursando: Sistemas da Informação <br>
                 Período: 4° <br>
+                E-mail: rafaellook@yahoo.com.br
                 </p>
         </section>
     </main>
@@ -210,29 +213,129 @@
         </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Modal 2 ---------------------------------------------------------->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" data-modal="modal2">&times;</span>
             <center>
-
-            <h2>Relatório 2</h2>        </center>
-
+                <h2>Potenciômetro em Arduino
+                    <br></center>
+                    <br>
+                    Disciplina: Sistemas de Computação e de Informação
+                    <br>
+                    Laboratório: C32 e C33
+                    <br>
+                    Data: 04/08/2024</h2>
+                    <br> 
+                    <br>
                 <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Page1-1', 'modal1')"><</button>
-                <button class="tablinks" onclick="openTab(event, 'Page1-2', 'modal1')">2</button>
-                <button class="tablinks" onclick="openTab(event, 'Page1-3', 'modal1')">></button>
+                <button class="tablinks" onclick="openTab(event, 'Page2-1', 'modal2')"><</button>
+                <button class="tablinks" onclick="openTab(event, 'Page2-2', 'modal2')">2</button>
+                <button class="tablinks" onclick="openTab(event, 'Page2-3', 'modal2')">></button>
             </div>
             <div id="Page2-1" class="tabcontent">
-                <p>Conteúdo</p>
-            </div>
+                <p><br><br>
 
+                    O Arduino é uma plataforma amplamente utilizada tanto por iniciantes quanto por profissionais para desenvolver sistemas interativos.
+                    Um dos componentes mais utilizados em circuitos eletrônicos é o potenciômetro,
+                    um dispositivo que permite a variação de resistência e, consequentemente, a modificação de sinais de controle.
+                    Este trabalho tem como objetivo desenvolver um potenciômetro funcional usando a plataforma Arduino, proporcionando uma aplicação
+                    prática de controle de intensidade de um LED por meio da variação de tensão.
+                    <br><br>
+                    <b>Objetivos</b>
+                    <br><br>
+                    O objetivo principal deste trabalho é montar e programar um circuito eletrônico baseado no Arduino para simular o comportamento de um potenciômetro.
+                    O circuito deve permitir a variação de intensidade de um LED através da rotação de um potenciômetro físico, permitindo o controle de corrente que atravessa o componente.
+                    <br>
+                    <br>
+                    <b> Objetivos específicos:</b>
+                    <br><br>
+                    - Montar o circuito com o Arduino, um potenciômetro e um LED. <br>
+                    - Programar o Arduino para ler o valor analógico do potenciômetro e ajustar a intensidade do LED. <br>
+                    - Testar e validar o funcionamento do sistema.
+                    <br><br>
+                    <b>Procedimentos</b>
+                    <br>
+                    Após a montagem do circuito e a gravação do código no Arduino, o sistema foi testado girando o
+                    potenciômetro e observando a variação na intensidade do LED.
+                    Foram realizados vários testes para verificar a suavidade e a resposta do LED ao movimento do potenciômetro.
+                 </p>
+            </div>
+<!------------------------------------------->
             <div id="Page2-2" class="tabcontent" style="display:none">
-                <p>Conteúdo</p>
+                <br><br><p><b>Materiais Utilizados:</b>
+                    <br><br>
+                    Jumpers: 9 unidades <br>
+                    Potenciômetro: 1 unidade <br>
+                    Protoboard: 1 unidade <br>
+                    Arduino Uno: 1 unidade <br>
+                    LEDs : 1 unidade <br>
+                    Resistor: 1 unidade <br>
+                    
+                    <br><br><br>
+                    
+                   <b>Codigo:</b>
+                    <br><br>
+                    int potenciometro = A0;<br>
+                    int led = 3;<br>
+                    int valor = 0;<br>
+                    <br>
+                    void setup() <br>
+                    {<br>
+                      pinMode(potenciometro, INPUT);<br>
+                      pinMode(led, OUTPUT);<br>
+                      Serial.begin(9600);<br>
+                    } <br>
+                    <br>
+                    void loop() <br>
+                    {<br>
+                      valor = map(analogRead(potenciometro),0,1023,0,255);<br>
+                      analogWrite(led,valor);<br>
+                      Serial.println(valor);<br>
+                      delay(10);<br>
+                    } <br>
+                    <br><br><br>
+                    
+                    <b>Diagrama</b>
+                <br><br>
+            <img src="" alt="">
+            
+            
+            </p>
             </div>
 
             <div id="Page2-3" class="tabcontent" style="display:none">
-                <p>Conteúdo</p>
+                <br><br>
+               <p><b>Discussão</b>
+                    <br><br>
+                    A montagem e programação do potenciômetro com o Arduino permitiram a criação de um circuito de
+                    controle simples e eficiente. Durante o desenvolvimento, foi observado que o valor analógico
+                    lido pelo Arduino pode ser influenciado por ruídos, especialmente em valores extremos, o que
+                    poderia ser atenuado com o uso de técnicas de filtragem. Contudo, para esta aplicação simples,
+                    a variação de intensidade foi suficientemente precisa. A técnica de PWM utilizada no Arduino
+                    permitiu a variação de brilho de forma linear, respondendo bem à rotação do potenciômetro.
+                    <br>
+                    <br>
+                    Um ponto interessante a ser considerado em projetos futuros seria a implementação de uma interface
+                    gráfica para visualizar em tempo real os valores lidos do potenciômetro e a intensidade do LED,
+                    oferecendo uma aplicação ainda mais interativa.
+                    <br><br>
+                    <b>Conclusão</b>
+                    <br>
+                    Este trabalho demonstrou a viabilidade de desenvolver um potenciômetro funcional usando a plataforma Arduino.
+                    O sistema foi montado e programado com sucesso, permitindo o controle de um LED através da variação da
+                    resistência do potenciômetro. A simplicidade do projeto mostrou a flexibilidade e acessibilidade do Arduino
+                    para criar soluções de controle analógico em diversos contextos. Futuras melhorias podem incluir técnicas de
+                    filtragem de ruído e uma interface gráfica para monitoramento dos dados.
+                
+                </p>
+                <br><br>
+                <h5>Referência:</h5>
+        <h6>
+            MCROBERTS, Michael. Arduino Básico. 2. ed. rev. São Paulo: Novatec, 2015. 505 p. v. 1. ISBN 978-85-7522-404-5.
+            <br>Disponível em: <a href="https://books.google.com.br/books?hl=pt-BR&lr=&id=EqOoBwAAQBAJ&oi=fnd&pg=PA6&dq=info:ntjvaX1J_9MJ:scholar.google.com/&ots=Dfdy7cqD24&sig=qLc9pw7Zku8d7LgBirpytjAhXyw&redir_esc=y#v=onepage&q&f=false" target="_blank">Link</a>.
+            <br>Acesso em: 02 set. 2024.
+        </h6>
             </div>
 
         </div>
