@@ -83,9 +83,12 @@ section:hover {
     background: linear-gradient(to right top, rgba(0, 0, 255, 0.678), rgba(0, 255, 0, 0.685));
     color: #fafafa;
     padding: 1rem;
-    transition: background-color 1ms;
-    border-radius: 8px
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, padding 0.5s ease-in-out;
+    border-radius: 8px;
 }
+
+
+
 
 /* Report section */
 .report-section {
