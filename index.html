@@ -18,7 +18,7 @@
                 <li><a href="#report2" class="open-modal" data-modal="modal2">Relatório Potenciômetro</a></li>
                 <li><a href="#report3" class="open-modal" data-modal="modal3">Relatório Sensor</a></li>
                 <li><a href="#report4" class="open-modal" data-modal="modal4">Relatório Sensor.2</a></li>
-                <li><a href="#report5" class="open-modal" data-modal="modal5">Relatório 5</a></li>
+                <li><a href="#report5" class="open-modal" data-modal="modal5">Relatório Botão</a></li>
 
             </ul>
         </nav>
@@ -722,13 +722,13 @@
 
                     <br><br>
 
-                    Objetivos<br>
+                   <b> Objetivos</b><br>
                     - Compreender o funcionamento dos sensores que utilizam LEDs RGB.<br>
                     - Analisar as vantagens e limitações dos LEDs RGB em sistemas de sensoriamento.<br>
                     - Explorar aplicações práticas em que sensores com LEDs RGB são mais adequados.<br>
                     <br><br>
 
-                    PROCEDIMENTOS - Por este projeto usar quase toda a base de um projeto ja feito por<br>
+                <b>PROCEDIMENTOS -</b> Por este projeto usar quase toda a base de um projeto ja feito por<br>
                     nosso grupo utilizamos a maioria dos conhecimentos que adquirimos no projeto anterior.</p>
             </div>
 
@@ -741,7 +741,7 @@
                 Resistor: 3 unidade<br>
                 LED RGB: 1 unidade
                 <br><br>
-                Codigo:<br>
+            <b>Codigo:</b><br>
                 int Echo = 8;<br>
                 int Trigger = 9;<br>
                 int LEDvermelho = 5;<br>
@@ -806,7 +806,7 @@
                  }<br>
                 }
                 <br><br>
-                Diagrama:
+            <b>Diagrama:</b>
                 <br><br>
                             
                     <img src="image4.jpg" alt="Descrição da imagem 1" width="725px">
@@ -897,7 +897,7 @@
             <!-------------------------------------------------------->
 
 
-        <div id="Page1-4" class="tabcontent" style="display:none">
+        <div id="Page4-4" class="tabcontent" style="display:none">
             <br><br><p>
                 <B>INTEGRANTES</B>
                     <main>
@@ -964,14 +964,14 @@
     <div class="modal-content">
         <span class="close" data-modal="modal5">&times;</span>
         <center>
-            <h2>Sensor em Arduino
+            <h2>Botão
                 <br></center>
                 <br>
                 Disciplina: Sistemas de Computação e de Informação
                 <br>
                 Laboratório: C32 e C33
                 <br>
-                Data: 00/00/2024</h2>
+                Data: 09/10/2024</h2>
                 <br> 
                 <br>
             <div class="tab">
@@ -990,9 +990,42 @@
         <!-------------------------------------------------------->
         <div id="Page5-2" class="tabcontent" style="display:none">
             <br><br><p>
-                CONTEUDO
+               <b>Materiais utilizados:</b> 
+                <br><br>
+                Jumpers: 5 unidades<br>
+                Resistor: 1 unidade<br>
+                LED vermelho: 1 unidade<br>
+                Botão: 1 unidade<br>
+                Arduino Uno R3: 1 unidade<br>
+                Breadboard Small: 1 unidade
+                <br><br>
+            <b> Codigo:</b> 
+                <br><br>
+                int LEDvermelho = 7;<br>
+                int botao = 6;
+                <br><br>
+                void setup()<br>
+                {<br>
+                pinMode(LEDvermelho, OUTPUT);<br>
+                pinMode(botao, INPUT_PULLUP);<br>
+                }
+                <br><br>
+                void loop()<br>
+                {<br>
+                if(digitalRead(botao) == LOW)
+                {<br>
+                digitalWrite(LEDvermelho, HIGH);<br>
+                }<br><br>
+                else<br>
+                {<br>
+                digitalWrite(LEDvermelho, LOW);<br>
+                }<br>
+                }
+                <br><br><br>
+            <b> Diagrama:</b> 
+                <br><br>
 
-                <img src="" alt="Descrição da imagem 1" width="725px">
+                <img src="botao_img.jpg" alt="Descrição da imagem 1" width="725px">
         </p>
         </div>
 
@@ -1007,20 +1040,81 @@
             <br><br>
             
             <h5>Referência:</h5>
-    <h6>
+            <h6>
+                
+                <br>Disponível em: <a href="https://schoolpress.sch.gr/stream/files/2024/01/Arduino.pdf" target="_blank">Link</a>.
+                <br>Acesso em: 10 set. 2024.
+            </h6>
+            <br><br>
+            <center><video width="640" height="560" controls>
+                <source src="botao.mp4" type="video/mp4">
+                <source src="botao.ogg" type="video/ogg">
+            </video></center>
+
+
+
+        </div> 
+
+ <div id="Page5-4" class="tabcontent" style="display:none">
+            <br><br><p>
+                <B>INTEGRANTES</B>
+                    <main>
         
-    </h6>
-    <br><br>
-    <center><video width="640" height="360" controls>
-       
-    </video></center>
+        <section id="report1" class="report-section">
+           <h2>Ariany Martins da Silva</h2>
+         <b><p>Detalhes do(a) aluno(a):</b><br>
+               Cursando: Sistemas da Informação.<br>
+               Período: 4° <br>
+               E-mail: arianymartinsdasilva@gmail.com
+            </p>
+        </section>
+        <section id="report2" class="report-section">
+           <h2>Filipe Dantas de Morais</h2>
+         <b><p>Detalhes do(a) aluno(a):</b><br>
+               Cursando: Sistemas da Informação.<br>
+               Período: 4° <br>
+               E-mail: dantasfilipe145@gmail.com
+            </p>
+        </section>
+        <section id="report3" class="report-section">
+            <h2>Guilherme Antônio Bernardes Borges</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: guilhermebernardessz10@gmail.com
+                </p>
+        </section>
+        <section id="report4" class="report-section">
+            <h2>Isabella Fonseca Ribeiro</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: isarib1998@gmail.com
+                </p>
+        </section>
+        <section id="report5" class="report-section">
+            <h2>Lucas Barata Camacho</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: lucasbaratamc@gmail.com
+                </p>
+        </section>
+        <section id="report6" class="report-section">
+            <h2>Rafael Luiz de Almeida Souza</h2>
+          <b><p>Detalhes do(a) aluno(a):</b><br>
+                Cursando: Sistemas da Informação <br>
+                Período: 4° <br>
+                E-mail: rafaellook@yahoo.com.br
+                </p>
+        </section>
+    </main>
+
+        </p>
         </div>
 
-        </div>
-    
         </div>
     </div>
-
 
 
 </body>
