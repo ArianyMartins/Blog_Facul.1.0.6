@@ -16,8 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header */
@@ -27,21 +25,13 @@ header {
     text-align: center;
     width: 100%;
     max-width: 1200px;
-    margin-top: -230px;
 }
 
 header h1 {
     margin-bottom: 1rem;
 }
 
-a:hover {
-    background: linear-gradient(to right top, #00f, #0f0);
-    color: #fafafa;
-    padding: 10px;
-    transition: background-color;
-    border-radius: 50px
-}
-
+/* Menu de navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,26 +42,48 @@ nav ul {
 
 nav ul li {
     margin: 0 1rem;
+    position: relative; /* Necessário para o tooltip */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
-    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, padding 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
+/* Estilo do tooltip personalizado */
+nav ul li a::after {
+    content: attr(data-title); /* Exibe o conteúdo do atributo 'data-title' */
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 150%; /* Posiciona o tooltip abaixo do item */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 0.8rem;
+    opacity: 0;
+    pointer-events: none; /* Evita interferência do cursor */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Exibe o tooltip no hover */
+nav ul li a:hover::after {
+    opacity: 1;
+}
+
+/* Efeitos de hover nos links do menu */
 nav ul li a:hover {
     color: #fafafa;
     background: linear-gradient(to right top, #00f, #0f0);
-    padding: 0.7rem; /* Aumentando levemente o padding no hover */
-    border-radius: 50px; /* Adicionando uma borda arredondada suave */
+    padding: 0.7rem;
+    border-radius: 50px;
 }
 
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 /* Main Content */
 main {
