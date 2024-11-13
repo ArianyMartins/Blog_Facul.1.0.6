@@ -1103,7 +1103,7 @@
                 <br>
                 Laboratório: C32 e C33
                 <br>
-                Data: 09/10/2024</h2>
+                Data: 20/10/2024</h2>
                 <br> 
                 <br>
             <div class="tab">
@@ -1116,7 +1116,29 @@
         <div id="Page6-1" class="tabcontent">
             <br>
             <p>
-                CONTEUDO</p>
+                - Este projeto utiliza um sensor ultrassônico para controlar o ângulo de um micro
+                servo motor com base na distância medida. O sensor detecta objetos próximos e
+                altera o ângulo do servo motor conforme a distância. Esse tipo de projeto é útil
+                em aplicações de detecção de obstáculos, controle de movimentos em robótica e
+                automação.
+
+                    <br><br>
+                <b>Objetivo</b><br>
+                - O objetivo deste projeto é controlar o movimento de um micro servo motor com
+                base na distância detectada por um sensor ultrassônico, de modo que o ângulo do
+                servo seja ajustado automaticamente conforme a proximidade de um objeto.
+
+                <br><br>
+
+                <b>Procedimentos:</b>
+                <br>
+                - Monte o circuito conforme o diagrama, conectando o sensor ultrassônico aos
+                pinos digitais 9 e 10 do Arduino e o micro servo motor ao pino digital 3.
+                - Carregue o código fonte no Arduino utilizando a IDE do Arduino.
+                - Coloque um objeto próximo ao sensor ultrassônico e observe o movimento do
+                servo motor. À medida que a distância muda, o ângulo do servo também se
+                ajusta.
+<br></p>
         </div>
 
         <!-------------------------------------------------------->
@@ -1185,7 +1207,31 @@
         <div id="Page6-3" class="tabcontent" style="display:none">
             <br><br>
             <p>
-                CONTEUDO
+                <b>Resultados:</b><br>
+                - Durante o teste, foi possível observar que o servo motor ajustava seu ângulo de <br>
+                acordo com a distância do objeto detectado pelo sensor ultrassônico. Quanto <br>
+                mais próximo o objeto, menor o ângulo do servo; quanto mais distante, maior o <br>
+                ângulo.
+                <br><br>
+                
+
+                <b>Discussão:</b><br>
+                - O projeto demonstrou a capacidade do sensor ultrassônico em medir distâncias <br>
+                com precisão e controlar o servo motor de forma dinâmica. Este sistema pode ser <br>
+                aprimorado utilizando sensores adicionais para controle de movimentos mais <br>
+                complexos em projetos de robótica. Um ponto de melhoria seria utilizar um filtro <br>
+                para reduzir o ruído nas leituras de distância e aumentar a estabilidade do <br>
+                movimento do servo.
+                <br><br>
+
+                <b>Conclusão:</b><br>
+                - O projeto de controle de um micro servo motor com base na leitura de um sensor <br>
+                ultrassônico foi concluído com sucesso. O sistema demonstrou sua eficácia para <br>
+                aplicações de controle de movimento baseado em proximidade, sendo um ótimo <br>
+                exemplo de integração entre sensores e atuadores no desenvolvimento de <br>
+                sistemas interativos com Arduino.
+                <br>
+
             </p>
             <br><br>
             
@@ -1287,7 +1333,28 @@
         <div id="Page7-1" class="tabcontent">
             <br>
             <p>
-                CONTEUDO</p>
+                - Este projeto utiliza dois potenciômetros para controlar independentemente dois <br>
+                micro servo motores. O ângulo de cada servo é ajustado conforme o valor lido nos <br>
+                potenciômetros, permitindo o controle manual preciso dos motores. Esse tipo de <br>
+                controle é comumente utilizado em projetos de robótica e automação para ajuste <br>
+                de posições.
+
+                    <br><br>
+                <b>Objetivo</b><br>
+                - O objetivo deste projeto é controlar dois micro servo motores individualmente <br>
+                utilizando dois potenciômetros, onde cada potenciômetro ajusta o ângulo de um <br>
+                dos servos.
+                <br><br>
+
+                <b>Procedimentos:</b>
+                <br>
+                - Monte o circuito conforme o diagrama, conectando cada potenciômetro aos pinos br
+                A0 e A1 do Arduino e os servos aos pinos digitais 9 e 10. <br>
+                - Carregue o código fonte no Arduino utilizando a IDE do Arduino. <br>
+                - Gire cada potenciômetro para observar o movimento dos respectivos servos. <br>
+                O ângulo de cada servo deve responder à posição do potenciômetro associado.<br>
+
+</p>
         </div>
 
         <!-------------------------------------------------------->
@@ -1357,7 +1424,25 @@
         <div id="Page7-3" class="tabcontent" style="display:none">
             <br><br>
             <p>
-                CONTEUDO
+                <b>Resultados:</b><br>
+                - Durante o teste, foi observado que cada servo motor ajustava seu ângulo <br>
+                conforme a posição do potenciômetro correspondente. O controle foi suave e <br>
+                responsivo, permitindo um ajuste preciso do ângulo dos servos.<br><br>
+                
+
+                <b>Discussão:</b><br>
+                - O projeto demonstra a simplicidade e eficácia de usar potenciômetros para <br>
+                controle de servos, especialmente em sistemas que requerem ajustes manuais <br>
+                precisos, como braços robóticos. Uma possível melhoria seria adicionar um filtro <br>
+                de suavização para garantir que pequenas variações no potenciômetro não <br>
+                resultem em movimentos abruptos dos servos. <br><br>
+
+                <b>Conclusão:</b><br>
+                - O controle de dois micro servo motores com potenciômetros foi implementado <br>
+                com sucesso. O sistema permite um controle direto e intuitivo dos ângulos dos <br>
+                servos, com aplicação em diversos tipos de projetos de robótica e automação.
+                <br>
+
             </p>
             <br><br>
             
@@ -1459,7 +1544,29 @@
         <div id="Page8-1" class="tabcontent">
             <br>
             <p>
-                CONTEUDO</p>
+                - Introdução O projeto de controle de LED RGB com três potenciômetros foi
+                desenvolvido para explorar o controle analógico de cores em um LED RGB.
+                Através dos potenciômetros, é possível ajustar a intensidade de cada componente
+                de cor (vermelho, verde e azul) individualmente, criando uma vasta gama de
+                cores personalizadas. O projeto utiliza um Arduino Uno como unidade de
+                controle, permitindo o ajuste manual das cores de forma precisa e intuitiva.
+                    <br><br>
+                <b>Objetivo</b><br>
+                - O objetivo deste projeto é controlar a cor de um LED RGB usando três <br>
+                potenciômetros, cada um responsável por ajustar uma cor primária (R, G, B). <br>
+                O sistema deve permitir que o usuário crie diversas combinações de cores ao variar <br>
+                a resistência de cada potenciômetro, alterando a intensidade da cor exibida no <br>
+                LED. <br><br>
+
+                <b>Procedimentos:</b>
+                <br>
+                - Montamos o circuito conforme o diagrama, conectando os pinos do LED RGB às <br>
+                portas PWM do Arduino (pinos 9, 10 e 11) através de resistores de 150 Ω. <br>
+                - Conectamos os três potenciômetros às entradas analógicas do Arduino (A0, A1 e A2). <br>
+                - Carregamos o código fonte no Arduino utilizando a IDE do Arduino. <br>
+
+
+</p>
         </div>
 
         <!-------------------------------------------------------->
@@ -1525,7 +1632,30 @@
         <div id="Page8-3" class="tabcontent" style="display:none">
             <br><br>
             <p>
-                CONTEUDO
+
+                <b>Resultados:</b><br>
+                - Durante os testes, foi possível observar que o ajuste de cada potenciômetro <br>
+                alterava a intensidade de uma das cores primárias do LED RGB. Girando os <br>
+                potenciômetros em diferentes combinações, foi possível criar uma ampla <br>
+                variedade de cores, comprovando o funcionamento do circuito e do código. <br><br>
+                
+
+                <b>Discussão:</b><br>
+                - O projeto demonstrou com sucesso o uso de entradas analógicas para controle de <br>
+                um LED RGB, permitindo ao usuário criar combinações de cores variadas. Uma <br>
+                limitação observada foi a resolução dos potenciômetros, que poderia ser <br>
+                melhorada para um controle ainda mais fino. Em futuras melhorias, sensores de <br>
+                toque ou controle via software poderiam ser integrados para uma experiência <br>
+                mais dinâmica. <br><br>
+
+
+                <b>Conclusão:</b><br>
+                - O projeto de controle de LED RGB com três potenciômetros foi concluído com <br>
+                sucesso. Através do Arduino Uno, foi possível realizar um controle preciso da cor <br>
+                do LED, permitindo ao usuário experimentar diferentes combinações de cor. <br>
+                O projeto mostrou-se eficaz para o aprendizado de manipulação de entradas <br>
+                analógicas e saídas PWM em circuitos de controle de iluminação. <br>
+
             </p>
             <br><br>
             
@@ -1537,8 +1667,8 @@
             </h6>
             <br><br>
             <center><video width="640" height="560" controls>
-                <source src="botao.mp4" type="video/mp4">
-                <source src="botao.ogg" type="video/ogg">
+                <source src="" type="video/mp4">
+                <source src="" type="video/ogg">
             </video></center>
 
 
